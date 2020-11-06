@@ -13,6 +13,13 @@ Compiling
 Defragmenting
 Connecting to
 Downloading
+Ionizing
+Randomizing
+Looping through
+Inspecting
+Uploading
+Syncing
+Booting
 EOF
 )
 
@@ -23,6 +30,19 @@ more RAM
 GNU/Linux
 ur mum
 Skynet
+drivers
+Windows XP source code
+patches
+programming socks
+package manager
+5G network
+the Kernel
+botnet
+deoxyribonucleic acid
+Gentoo
+the hacker known as four chins
+basket waiving forum
+Temple OS
 EOF
 )
 
