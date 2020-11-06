@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# TODO:
+# Fancy exit messages
+# Add more verbs/nouns
+# Waiting animation(s)
+# Colors
+# Add TODO items
+
 verbs=$(cat <<EOF
 Interjecting
 Compiling
