@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # TODO:
-# Fancy exit messages
+# More exit messages
 # Add more verbs/nouns
 # Waiting animation(s)
 # Colors
@@ -46,6 +46,20 @@ Temple OS
 EOF
 )
 
+exits=$(cat <<EOF
+Operation failed successfully.
+Error: No Error Found!
+Keyboard not detected. Press any key do continue...
+EOF
+)
+
+
+finish () {
+    printf "\n"
+    printf "%s" "$exits" | shuf -n 1
+    printf "\n"
+}
+trap finish EXIT
 
 scroll () {
     text="$*"
