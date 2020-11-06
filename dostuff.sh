@@ -1,5 +1,25 @@
 #!/bin/bash
 
+verbs=$(cat <<EOF
+Interjecting
+Compiling
+Defragmenting
+Connecting to
+Downloading
+EOF
+)
+
+
+nouns=$(cat <<EOF
+the Matrix
+more RAM
+GNU/Linux
+ur mum
+Skynet
+EOF
+)
+
+
 scroll () {
     text="$*"
     length="${#text}"
@@ -9,5 +29,10 @@ scroll () {
     done
 }
 
-scroll "$@"
-printf "\n"
+while : ; do
+    verb=$(printf "%s" "$verbs" | shuf -n 1)
+    noun=$(printf "%s" "$nouns" | shuf -n 1)
+    scroll "$verb $noun..."
+    printf "\n"
+    sleep $[ ( $RANDOM % 5 ) + 1 ]s
+done
