@@ -5,7 +5,7 @@
 # Add more verbs/nouns
 # Waiting animation(s)
 # Colors
-# Add TODO items
+# Add more TODO items
 
 verbs=$(cat <<EOF
 Interjecting
@@ -13,13 +13,26 @@ Compiling
 Defragmenting
 Connecting to
 Downloading
-Ionizing
 Randomizing
 Looping through
 Inspecting
 Uploading
 Syncing
 Booting
+Rebooting
+Decrypting
+Debunking
+Rebunking
+Decentralizing
+Standardizing
+Hacking
+Restoring
+Crashing
+Cracking
+Demystifying
+Assembling
+Loading
+Uninstalling
 EOF
 )
 
@@ -40,9 +53,24 @@ the Kernel
 botnet
 deoxyribonucleic acid
 Gentoo
-the hacker known as four chins
+the infamous hacker known as Four Chins
 basket waiving forum
 Temple OS
+blockchain
+geostationary satelite network
+CIA backdoor
+NSA backdoor(s)
+Anonymous
+passwords
+ncmpcpp
+the BIOS
+127.0.0.1
+neural networks
+Internet Explorer
+quantum computer network
+nearest 5G tower
+Internet of Things
+hypertext transfer protcol
 EOF
 )
 
@@ -75,5 +103,5 @@ while : ; do
     noun=$(printf "%s" "$nouns" | shuf -n 1)
     scroll "$verb $noun..."
     printf "\n"
-    sleep $[ ( $RANDOM % 5 ) + 1 ]s
+    sleep $(( ( RANDOM % 5 ) + 1 ))s
 done
